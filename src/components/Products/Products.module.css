@@ -1,0 +1,19 @@
+.ProductsContainer {
+  display: flex;
+}
+.ProductsListContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 30px 60px 200px;
+  height: 700px;
+  width: 740px;
+  background-color: #425d70;
+}
+.ProductsCategoriesContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 50px 60px 0px;
+  height: 650px;
+  width: 360px;
+  background-color: #425d70;
+}

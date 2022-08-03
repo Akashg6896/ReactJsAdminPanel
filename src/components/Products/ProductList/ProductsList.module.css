@@ -1,0 +1,16 @@
+#productBtn {
+  background-color: #f4a622;
+  border: 2px solid #f4a622;
+  padding: 16px;
+  color: #ffff;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 8px 30px;
+  cursor: pointer;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+#productBtn:hover {
+  color: #f4a622;
+  background-color: inherit;
+}

@@ -1,0 +1,63 @@
+td {
+  padding: 16px;
+  color: #ffff;
+  font-weight: 500;
+  /* width: min-content; */
+  /* background-color: #4a6077; */
+}
+.product {
+  background-color: #50687e;
+  margin: 5px 0px;
+  border: 1px solid #394e64;
+}
+.productCategories {
+  background-color: #50687e;
+  margin: 5px 0px;
+  border: 1px solid #394e64;
+}
+.product:hover {
+  background-color: #486076;
+  cursor: pointer;
+}
+tr {
+  margin: 5px 0px;
+}
+tr td {
+  /* border: 2px solid white; */
+  text-align: left;
+}
+.deleteProduct {
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #394e64;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 1.1rem;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+/* i {
+  border-color: #50687e;
+} */
+input[type='checkbox'] {
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #394e64;
+  background-position: center;
+  border-radius: 50%;
+  box-sizing: border-box;
+  position: relative;
+  box-sizing: content-box;
+  width: 24px;
+  height: 24px;
+  transition: all 0.1s linear;
+  padding: 0;
+}
+input[type='checkbox']:checked {
+  background: url('https://templatemo.com/templates/templatemo_524_product_admin/img/check-mark.png')
+    #394e64 center no-repeat;
+}

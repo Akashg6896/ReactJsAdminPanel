@@ -1,0 +1,68 @@
+.NotificationListContainer {
+  width: 550px;
+  height: 450px;
+  background-color: #425c71;
+  margin-right: 30px;
+  /* margin-bottom: 30px; */
+  overflow: hidden;
+  /* height: 90%; */
+  /* padding-bottom: 30px; */
+}
+.Title {
+  margin-left: 30px;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  font-size: 17px;
+  font-weight: 700;
+}
+.NotificationContainer {
+  width: 95%;
+  height: 80%;
+  overflow-y: scroll;
+  margin-bottom: 20px;
+}
+.container {
+  height: 80px;
+  display: flex;
+  background-color: #4e657a;
+  margin-left: 20px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.imgContainer {
+  width: 110px;
+  /* height: 100px; */
+  /* background-size: inherit; */
+  /* background-attachment: fixed; */
+  background-position: center;
+  /* background-clip: content-box; */
+}
+img {
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover; */
+  /* max-width: 100%;
+  max-height: 100%; */
+  /* width: auto;
+  height: auto; */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.roundedCircle {
+  border-radius: 50%;
+}
+.desc {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  /* padding-bottom: 20px; */
+}
+.descContainer {
+  width: 100%;
+}
+span {
+  float: left;
+  margin-left: 20px;
+  color: rgb(174, 202, 217);
+}

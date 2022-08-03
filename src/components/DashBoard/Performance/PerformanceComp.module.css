@@ -1,0 +1,18 @@
+.PerformanceCompContainer {
+  width: 550px;
+  height: 350px;
+  background-color: #425c71;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.Title {
+  margin-left: 30px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+  font-size: 17px;
+  font-weight: 700;
+}
+.BarChartContainer {
+  width: 80%;
+  margin-left: 60px;
+}

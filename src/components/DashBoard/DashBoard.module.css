@@ -1,0 +1,14 @@
+p {
+  text-align: left;
+  color: #ffff;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.DashBoardContainer {
+  /* max-width: 1140px; */
+  margin: 0 180px;
+}
+.ChartContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
