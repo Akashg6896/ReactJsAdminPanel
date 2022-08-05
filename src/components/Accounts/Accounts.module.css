@@ -1,0 +1,117 @@
+.accountsContainer {
+  margin: 30px 190px 30px 220px;
+}
+.accountsListContainer {
+  display: flex;
+  flex-direction: column;
+  height: 230px;
+  background-color: rgb(66, 93, 112);
+}
+.Title {
+  color: #ffff;
+  text-align: left;
+  font-size: 18px;
+  margin-left: 40px;
+  letter-spacing: 0.6px;
+}
+.ListOfAccounts {
+  margin: 20px 40px;
+  /* width: 90%; */
+  display: flex;
+  flex-direction: column;
+  width: auto;
+}
+.accountsSelect {
+  appearance: none;
+  padding: 15px;
+  background: url('https://templatemo.com/templates/templatemo_524_product_admin/img/arrow-down.png')
+    98% no-repeat #50657b;
+}
+.AccountDetails {
+  display: flex;
+  margin-top: 20px;
+  height: 490px;
+  /* background-color: rgb(66, 93, 112); */
+}
+.AccountsAvatar {
+  width: 35%;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: rgb(66, 93, 112);
+}
+.AvatarImgContainer {
+  height: 55%;
+  margin: 20px 20px;
+  background-color: rgb(140, 176, 203);
+}
+#uploadImgBtn {
+  background-color: #f4a622;
+  border: 2px solid #f4a622;
+  padding: 18px 94px;
+  color: #ffff;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 10px 0;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+#uploadImgBtn:hover {
+  color: #f4a622;
+  background-color: inherit;
+  /* border: 2px solid #f4a622; */
+  /* border-style: none; */
+}
+.AccountSettings {
+  width: 65%;
+  background-color: rgb(66, 93, 112);
+}
+.AccountsForm {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  margin-left: 40px;
+  margin-right: 0px;
+}
+.AccountsField {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  width: 46%;
+}
+.updateProfileBtn {
+  background-color: #f4a622;
+  border: 2px solid #f4a622;
+  padding: 18px 70px;
+  color: #ffff;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 30px 10px 30px 0px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+.updateProfileBtn:hover {
+  color: #f4a622;
+  background-color: inherit;
+  /* border: 2px solid #f4a622; */
+  /* border-style: none; */
+}
+.DeleteAccountBtn {
+  background-color: #f4a622;
+  border: 2px solid #f4a622;
+  padding: 18px 228px;
+  color: #ffff;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 0px 10px 30px 22px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+.DeleteAccountBtn:hover {
+  color: #f4a622;
+  background-color: inherit;
+  /* border: 2px solid #f4a622; */
+  /* border-style: none; */
+}

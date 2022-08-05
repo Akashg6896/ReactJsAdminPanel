@@ -12,12 +12,12 @@ const AddProductImage = ({ productDetails, setProductDetails }) => {
     })
   }, [productImageUrl])
   //   let isImgUploaded = false
-  const uploadImageFile = async (e) => {
+  const uploadImageFile = (e) => {
     setImgUploaded(false)
 
-    const file = document.getElementById('file')
-    await file.click()
-    await setProductImageUrl('')
+    const file = document.getElementById('file').click()
+    // await file.click()
+    setProductImageUrl('')
     // await file.change((e) => console.log(e.target.files[0]))
     console.log(file)
     // console.log(file)

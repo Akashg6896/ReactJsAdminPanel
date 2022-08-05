@@ -65,6 +65,7 @@ const AddProduct = () => {
         isDateValid: false,
       }))
       alert('Please select valid date')
+      return true
     } else if (isNaN(productDetails.stock) || productDetails.stock === '') {
       console.log(Number(productDetails.stock))
       setProductDetailsValid((PrevProductState) => ({
@@ -80,16 +81,16 @@ const AddProduct = () => {
       }))
       alert('Please upload the Image in a valid format')
       return true
-    } else {
-      setProductDetailsValid({
-        isProductNameValid: true,
-        isDescriptionValid: true,
-        isCategoryValid: true,
-        isDateValid: true,
-        isStockValid: true,
-        isProductImage: true,
-      })
     }
+    setProductDetailsValid({
+      isProductNameValid: true,
+      isDescriptionValid: true,
+      isCategoryValid: true,
+      isDateValid: true,
+      isStockValid: true,
+      isProductImage: true,
+    })
+
     console.log(productDetails)
     const getFormattedDate = (date) => {
       const FormattedDate = new Date(date).toLocaleDateString(
