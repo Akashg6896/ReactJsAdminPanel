@@ -28,7 +28,7 @@ function App() {
     //     .then((res) => localStorage.setItem('ProductList', JSON.stringify(res)))
     // }
     // console.log(isLoggedIn)
-    console.log(isLoggedIn)
+    console.log(LoggedIn)
     console.log(localStorage.getItem('ProductList'))
     if (LoggedIn && localStorage.getItem('ProductList') === null) {
       axios
