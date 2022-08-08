@@ -35,11 +35,12 @@ const Login = (props) => {
       //     if (localStorage.getItem('ProductList') === null) continue
       //     else break
       //   }
-      navigate('/dashboard')
+
       // })
       // <Navigate to='/dashboard' state={{ path: location.pathname }}/>
       // console.log(localStorage)
       props.userHandler(true)
+      navigate('/dashboard')
     }
   }
   return (
