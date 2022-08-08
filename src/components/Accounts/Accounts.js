@@ -23,11 +23,12 @@ const Accounts = () => {
   })
   // let Account
 
-  let Accounts = async () => {
-    let accounts = await JSON.parse(localStorage.getItem('ProductList'))
-      .accountsPage
-    return accounts
-  }
+  // let Accounts = async () => {
+  //   let accounts = await JSON.parse(localStorage.getItem('ProductList'))
+  //     .accountsPage
+  //   return accounts
+  // }
+  let Accounts = JSON.parse(localStorage.getItem('ProductList'))
   console.log(`line No:26`)
   console.log(Accounts)
   useEffect(() => {
