@@ -11,14 +11,14 @@ import axios from 'axios'
 import AddProduct from './components/Products/AddProducts/AddProduct'
 function App() {
   // const isLoggedIn = JSON.parse(localStorage.getItem('LoggedIn'))
-  let [isLoggedIn, setLoggedIn] = useState(false)
+  // let [isLoggedIn, setLoggedIn] = useState(false)
+  let isLoggedIn = false
   const userHandler = (userLogged) => {
-    setLoggedIn(userLogged)
+    isLoggedIn = userLogged
   }
   console.log(isLoggedIn)
-  // let isLoggedIn = false
   useEffect(() => {
-    // let LoggedIn = JSON.parse(localStorage.getItem('LoggedIn'))
+    let LoggedIn = JSON.parse(localStorage.getItem('LoggedIn'))
     // setLoggedIn(LoggedIn === null || LoggedIn === false ? false : true)
     // console.log(LoggedIn)
     // if (LoggedIn && localStorage.getItem('ProductList') === null) {
@@ -30,7 +30,7 @@ function App() {
     // console.log(isLoggedIn)
     console.log(isLoggedIn)
     console.log(localStorage.getItem('ProductList'))
-    if (isLoggedIn && localStorage.getItem('ProductList') === null) {
+    if (LoggedIn && localStorage.getItem('ProductList') === null) {
       axios
         .get('https://reactmusicplayer-ab9e4.firebaseio.com/project-data.json')
         .then((res) => res.data)
