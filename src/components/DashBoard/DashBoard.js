@@ -6,16 +6,21 @@ import NotificationList from './NotificationList/NotificationList'
 import OrderList from './OrderList/OrderList'
 import styles from './DashBoard.module.css'
 const DashBoard = () => {
-  // const [dashBoardArr, setDashBoardArr] = useState([])
-  // useEffect(() => {
-  //   setDashBoardArr(
-  //     JSON.parse(localStorage.getItem('ProductList')).dasbhoardPage
-  //   )
-  //   // console.log(dashBoardArr)
-  // }, [])
-  const dashBoardArr = JSON.parse(
-    localStorage.getItem('ProductList')
-  ).dasbhoardPage
+  const [dashBoardArr, setDashBoardArr] = useState({})
+  useEffect(() => {
+    setDashBoardArr(
+      JSON.parse(localStorage.getItem('ProductList')).dasbhoardPage
+    )
+    // console.log(dashBoardArr)
+  }, [])
+  // const dashBoardArr = async () => {
+  //   let dashboardArr = await JSON.parse(localStorage.getItem('ProductList'))
+  //     .dasbhoardPage
+  //   return dashboardArr
+  // }
+  // const dashBoardArr = JSON.parse(
+  //   localStorage.getItem('ProductList')
+  // ).dasbhoardPage
   const options = {
     responsive: true,
     animations: {

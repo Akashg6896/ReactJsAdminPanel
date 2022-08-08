@@ -6,7 +6,7 @@ ChartJS.register(...registerables)
 const LatestHits = ({ latestHits, options }) => {
   //   console.log(Object.keys(latestHits))
   //   let latestHitsCategories
-
+  console.log(latestHits)
   //   if (latestHits) latestHitsCategories = Object.keys(latestHits)
   //   //   useEffect(() => {
   //   latestHitsCategories = latestHitsCategories.filter(

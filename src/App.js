@@ -38,6 +38,18 @@ function App() {
             !isLoggedIn ? <Login userHandler={userHandler} /> : <DashBoard />
           }
         />
+        <Route
+          path='*'
+          element={
+            !isLoggedIn ? <Login userHandler={userHandler} /> : <DashBoard />
+          }
+        />
+        <Route
+          path='ReactJsAdminPanel'
+          element={
+            !isLoggedIn ? <Login userHandler={userHandler} /> : <DashBoard />
+          }
+        />
         <Route path='login' element={<Login userHandler={userHandler} />} />
         <Route
           path='dashboard'
