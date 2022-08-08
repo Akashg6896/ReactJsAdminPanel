@@ -33,7 +33,7 @@ function App() {
     // console.log(isLoggedIn)
     console.log(isLoggedIn)
     console.log(localStorage.getItem('ProductList'))
-    if (isLoggedIn && localStorage.getItem('ProductList') === null) {
+    if (localStorage.getItem('ProductList') === null) {
       axios
         .get('https://reactmusicplayer-ab9e4.firebaseio.com/project-data.json')
         .then((res) => res.data)
