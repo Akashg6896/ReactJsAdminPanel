@@ -11,8 +11,8 @@ const DashBoard = () => {
     setDashBoardArr(
       JSON.parse(localStorage.getItem('ProductList')).dasbhoardPage
     )
-    // console.log(dashBoardArr)
-  }, [])
+    console.log(dashBoardArr)
+  }, [dashBoardArr])
   // const dashBoardArr = async () => {
   //   let dashboardArr = await JSON.parse(localStorage.getItem('ProductList'))
   //     .dasbhoardPage
@@ -21,6 +21,7 @@ const DashBoard = () => {
   // const dashBoardArr = JSON.parse(
   //   localStorage.getItem('ProductList')
   // ).dasbhoardPage
+  console.log(dashBoardArr)
   const options = {
     responsive: true,
     animations: {
