@@ -11,8 +11,8 @@ import axios from 'axios'
 import AddProduct from './components/Products/AddProducts/AddProduct'
 function App() {
   // const isLoggedIn = JSON.parse(localStorage.getItem('LoggedIn'))
-  // let [isLoggedIn, setLoggedIn] = useState(false)
   let isLoggedIn = false
+  // let [isLoggedIn, setLoggedIn] = useState(false)
   const userHandler = (userLogged) => {
     isLoggedIn = userLogged
   }
