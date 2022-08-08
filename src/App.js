@@ -27,6 +27,8 @@ function App() {
     //     .then((res) => res.data)
     //     .then((res) => localStorage.setItem('ProductList', JSON.stringify(res)))
     // }
+    console.log(isLoggedIn)
+    console.log(localStorage.getItem('ProductList'))
     if (isLoggedIn && localStorage.getItem('ProductList') === null) {
       axios
         .get('https://reactmusicplayer-ab9e4.firebaseio.com/project-data.json')
