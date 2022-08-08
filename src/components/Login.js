@@ -25,18 +25,18 @@ const Login = (props) => {
       // localStorage.setItem('LoggedIn', JSON.stringify({ user: user.userName }))
       localStorage.setItem('LoggedIn', true)
       // if (LoggedIn && localStorage.getItem('ProductList') === null) {
-      axios
-        .get('https://reactmusicplayer-ab9e4.firebaseio.com/project-data.json')
-        .then((res) => res.data)
-        .then((res) => localStorage.setItem('ProductList', JSON.stringify(res)))
-        // }
-        .then((res) => {
-          while (true) {
-            if (localStorage.getItem('ProductList') === null) continue
-            else break
-          }
-          return navigate('/dashboard')
-        })
+      // axios
+      //   .get('https://reactmusicplayer-ab9e4.firebaseio.com/project-data.json')
+      //   .then((res) => res.data)
+      //   .then((res) => localStorage.setItem('ProductList', JSON.stringify(res)))
+      //   // }
+      // .then((res) => {
+      //   while (true) {
+      //     if (localStorage.getItem('ProductList') === null) continue
+      //     else break
+      //   }
+      navigate('/dashboard')
+      // })
       // <Navigate to='/dashboard' state={{ path: location.pathname }}/>
       // console.log(localStorage)
       props.userHandler(true)

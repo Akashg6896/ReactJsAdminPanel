@@ -18,15 +18,22 @@ function App() {
   console.log(isLoggedIn)
   // let isLoggedIn = false
   useEffect(() => {
-    let LoggedIn = JSON.parse(localStorage.getItem('LoggedIn'))
-    setLoggedIn(LoggedIn ? true : false)
-    console.log(LoggedIn)
+    // let LoggedIn = JSON.parse(localStorage.getItem('LoggedIn'))
+    // setLoggedIn(LoggedIn === null || LoggedIn === false ? false : true)
+    // console.log(LoggedIn)
     // if (LoggedIn && localStorage.getItem('ProductList') === null) {
     //   axios
     //     .get('https://reactmusicplayer-ab9e4.firebaseio.com/project-data.json')
     //     .then((res) => res.data)
     //     .then((res) => localStorage.setItem('ProductList', JSON.stringify(res)))
     // }
+    if (isLoggedIn && localStorage.getItem('ProductList') === null) {
+      axios
+        .get('https://reactmusicplayer-ab9e4.firebaseio.com/project-data.json')
+        .then((res) => res.data)
+        .then((res) => localStorage.setItem('ProductList', JSON.stringify(res)))
+      // }
+    }
   }, [isLoggedIn])
   return (
     <div className='App'>
