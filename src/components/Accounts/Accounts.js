@@ -28,7 +28,7 @@ const Accounts = () => {
   //     .accountsPage
   //   return accounts
   // }
-  let Accounts = JSON.parse(localStorage.getItem('ProductList'))
+  let Accounts = JSON.parse(localStorage.getItem('ProductList')).accountsPage
   console.log(`line No:26`)
   console.log(Accounts)
   useEffect(() => {
