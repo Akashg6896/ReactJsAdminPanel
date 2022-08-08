@@ -19,7 +19,7 @@ function App() {
   console.log(isLoggedIn)
   useEffect(() => {
     let LoggedIn = JSON.parse(localStorage.getItem('LoggedIn'))
-    // setLoggedIn(LoggedIn === null || LoggedIn === false ? false : true)
+     // setLoggedIn(LoggedIn === null || LoggedIn === false ? false : true)
     // console.log(LoggedIn)
     // if (LoggedIn && localStorage.getItem('ProductList') === null) {
     //   axios
