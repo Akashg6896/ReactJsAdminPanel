@@ -18,10 +18,12 @@ const DashBoard = () => {
   //     .dasbhoardPage
   //   return dashboardArr
   // }
+  console.log(localStorage.getItem('ProductList'))
   let dashBoardArr = JSON.parse(
     localStorage.getItem('ProductList')
   ).dasbhoardPage
   console.log(dashBoardArr)
+
   const options = {
     responsive: true,
     animations: {
