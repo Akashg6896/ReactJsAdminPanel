@@ -39,7 +39,7 @@ const Login = (props) => {
       // })
       // <Navigate to='/dashboard' state={{ path: location.pathname }}/>
       // console.log(localStorage)
-      navigate('/dashboard')
+
       props.userHandler(true)
     }
   }

@@ -1,6 +1,7 @@
 import './App.css'
 import React, { useEffect, useState } from 'react'
 import { Routes, Route } from 'react-router'
+import { useNavigate } from 'react-router-dom'
 import ProductsNavBar from './components/ProductsNavBar'
 import Login from './components/Login'
 import Footer from './components/Footer/Footer'
@@ -12,6 +13,7 @@ import AddProduct from './components/Products/AddProducts/AddProduct'
 function App() {
   // const isLoggedIn = JSON.parse(localStorage.getItem('LoggedIn'))
   // let isLoggedIn = false
+  const navigate = useNavigate()
   let [isLoggedIn, setLoggedIn] = useState(false)
   const userHandler = (userLogged) => {
     setLoggedIn(userLogged)
@@ -36,9 +38,10 @@ function App() {
         .get('https://reactmusicplayer-ab9e4.firebaseio.com/project-data.json')
         .then((res) => res.data)
         .then((res) => localStorage.setItem('ProductList', JSON.stringify(res)))
-      // }
+        // }
+        .then(() => navigate('/dashboard'))
     }
-  }, [isLoggedIn])
+  }, [isLoggedIn, navigate])
   return (
     <div className='App'>
       <ProductsNavBar userHandler={userHandler} />
