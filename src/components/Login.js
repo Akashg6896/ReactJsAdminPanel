@@ -33,9 +33,7 @@ const Login = (props) => {
         .then(() => {
           while (true) {
             if (localStorage.getItem('ProductList') === null) continue
-            else {
-              break
-            }
+            else break
           }
           return navigate('/dashboard')
         })
