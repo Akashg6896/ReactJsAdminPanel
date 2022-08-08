@@ -30,7 +30,7 @@ const Login = (props) => {
         .then((res) => res.data)
         .then((res) => localStorage.setItem('ProductList', JSON.stringify(res)))
         // }
-        .then(() => {
+        .then((res) => {
           while (true) {
             if (localStorage.getItem('ProductList') === null) continue
             else break
