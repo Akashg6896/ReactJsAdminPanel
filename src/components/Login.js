@@ -30,7 +30,15 @@ const Login = (props) => {
         .then((res) => res.data)
         .then((res) => localStorage.setItem('ProductList', JSON.stringify(res)))
         // }
-        .then(() => navigate('/dashboard'))
+        .then(() => {
+          while (true) {
+            if (localStorage.getItem('ProductList') === null) continue
+            else {
+              break
+            }
+          }
+          return navigate('/dashboard')
+        })
       // <Navigate to='/dashboard' state={{ path: location.pathname }}/>
       // console.log(localStorage)
       props.userHandler(true)
