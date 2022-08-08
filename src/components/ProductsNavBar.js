@@ -14,8 +14,8 @@ const ProductsNavBar = ({ userHandler }) => {
     // props.userHandler(LoggedInUser === null ? false : true)
   })
   const logoutHandler = () => {
-    localStorage.removeItem('LoggedIn')
     localStorage.removeItem('ProductList')
+    localStorage.removeItem('LoggedIn')
     // localStorage.clear()
     userHandler(false)
     navigate('/login')
